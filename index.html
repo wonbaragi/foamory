@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Foamory 문서</title>
+  <style>
+    :root {
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #0f172a;
+      --muted: #475569;
+      --line: #dbe4ee;
+      --accent: #2563eb;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: -apple-system, BlinkMacSystemFont, "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
+      background: linear-gradient(180deg, #f8fbff 0%, #edf4fb 100%);
+      color: var(--text);
+    }
+    .wrap {
+      max-width: 920px;
+      margin: 0 auto;
+      padding: 48px 20px 80px;
+    }
+    h1 {
+      margin: 0 0 12px;
+      font-size: 42px;
+      line-height: 1.1;
+    }
+    p {
+      margin: 0;
+      color: var(--muted);
+      line-height: 1.7;
+      font-size: 17px;
+    }
+    .grid {
+      display: grid;
+      gap: 16px;
+      margin-top: 28px;
+    }
+    .card {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      padding: 24px;
+    }
+    .card:hover {
+      border-color: #bfd3ea;
+      box-shadow: 0 12px 30px rgba(37, 99, 235, 0.08);
+    }
+    .label {
+      color: var(--accent);
+      font-size: 14px;
+      font-weight: 800;
+      margin-bottom: 8px;
+    }
+    .title {
+      font-size: 24px;
+      font-weight: 900;
+      margin-bottom: 8px;
+    }
+  </style>
+</head>
+<body>
+  <main class="wrap">
+    <h1>Foamory 문서</h1>
+    <p>구글플레이 등록과 운영에 필요한 공개 문서 모음입니다.</p>
+
+    <section class="grid">
+      <a class="card" href="./privacy-policy.html">
+        <div class="label">Public URL</div>
+        <div class="title">개인정보처리방침</div>
+        <p>Google Play Console에 입력할 공개 개인정보처리방침 페이지입니다.</p>
+      </a>
+      <a class="card" href="./google-play-data-safety-draft.md">
+        <div class="label">Play Console</div>
+        <div class="title">Data Safety 초안</div>
+        <p>Google Play Data Safety 항목을 입력할 때 참고할 수 있는 문답형 초안입니다.</p>
+      </a>
+      <a class="card" href="./google-play-store-listing-draft.md">
+        <div class="label">Store Listing</div>
+        <div class="title">스토어 문구 초안</div>
+        <p>앱 이름, 짧은 설명, 긴 설명, 카테고리 추천을 정리한 등록용 문서입니다.</p>
+      </a>
+      <a class="card" href="./google-play-release-checklist.md">
+        <div class="label">Release</div>
+        <div class="title">출시 체크리스트</div>
+        <p>릴리즈 AAB, 스토어 이미지, 개인정보처리방침, Data Safety까지 한 번에 점검하는 목록입니다.</p>
+      </a>
+    </section>
+  </main>
+</body>
+</html>
